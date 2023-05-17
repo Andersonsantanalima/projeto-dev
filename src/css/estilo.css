@@ -1,3 +1,122 @@
 body{
     font-family: 'Poppins' ,sans-serif;
+    max-width: 1280px;
+    margin: 0;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body .modo-escuro{
+background-color: #000000;
+color: rgb(205, 210, 241);
+}
+
+header{
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo,
+header .imagem-botao{
+     width: 30px;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: help;
+}
+
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemom:hover{
+    transform: scale(1.55);
+    cursor: pointer;
+}
+
+main{
+    background-color: antiquewhite;
+    padding: 25px;
+}
+
+main .listagem-pokemom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemom{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    }
+
+ header .cartao-pokemom:hover{
+    background-color: #1b29a6;
+ }
+
+.modo-escuro .cartao-pokemom{
+    background-color: #999797;
+}
+
+main .cartao-pokemom .informacoes{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333338;
+    border-radius: 10px;
+}
+
+main .cartao-pokemom .informacoes span{
+    padding:5px;
+    gap: 1px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemom .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemom .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemom .tipo{
+    padding: 8px;
+    border-radius: 11px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.voador{
+    background-color: rgb(176, 195, 212);
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
 }
